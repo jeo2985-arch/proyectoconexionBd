@@ -1,0 +1,14 @@
+{
+  "name": "CRUD Alumnos Java 21 / Maven",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {"version": "none", "installMaven": "true", "installGradle": "false"}
+  },
+  "customizations": {"vscode": {"extensions": ["vscjava.vscode-java-pack", "vscjava.vscode-maven"]}},
+  "secrets": {
+    "DB_HOST": {"description": "Servidor Azure SQL, por ejemplo mi-servidor.database.windows.net"},
+    "DB_NAME": {"description": "Nombre de la base de datos: AvanzadaII"},
+    "DB_USER": {"description": "Usuario SQL con acceso a AvanzadaII"},
+    "DB_PASSWORD": {"description": "Contraseña del usuario SQL"}
+  }
+}
